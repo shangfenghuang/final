@@ -193,7 +193,7 @@ function load_map(style) {
     }
     intervalId = setInterval(function() {
       getLocation();
-    }, 600000);
+    }, 60000);
   });
 
   exitNavigationBtn.addEventListener('click', function (){
