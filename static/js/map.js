@@ -191,6 +191,7 @@ function load_map(style) {
     if (history_route.features.length != 0){
       history_route.features = [];
     }
+     getLocation();
     intervalId = setInterval(function() {
       getLocation();
     }, 60000);
