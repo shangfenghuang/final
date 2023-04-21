@@ -1,4 +1,10 @@
 // get today time
+function showTime() {
+      var date = new Date();
+      var time = date.toLocaleTimeString();
+      document.getElementById('clock').innerHTML = time;
+    }
+setInterval(showTime, 1000);
 var date = new Date();
 var hours = date.getHours();
 const crime = document.getElementById('Crimes');
@@ -185,10 +191,9 @@ function load_map(style) {
     if (history_route.features.length != 0){
       history_route.features = [];
     }
-    console.log('start');
     intervalId = setInterval(function() {
       getLocation();
-    }, 60000);
+    }, 100000);
   });
 
   exitNavigationBtn.addEventListener('click', function (){
@@ -413,6 +418,12 @@ function getLocation() {
       },
       (error) => {
         console.error(error);
+//         if (retryCount < 3) {
+//           retryCount++;
+//           setTimeout(() => {
+//             getLocation();
+//           }, 1000);
+//         }
       });
 }
 function update_history_route(coordinates){
