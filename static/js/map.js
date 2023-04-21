@@ -188,7 +188,7 @@ function load_map(style) {
     console.log('start');
     intervalId = setInterval(function() {
       getLocation();
-    }, 10000);
+    }, 60000);
   });
 
   exitNavigationBtn.addEventListener('click', function (){
