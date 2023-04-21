@@ -412,12 +412,6 @@ function getLocation() {
       },
       (error) => {
         console.error(error);
-        if (retryCount < 3) {
-          retryCount++;
-          setTimeout(() => {
-            getLocation();
-          }, 30000);
-        }
       });
 }
 function update_history_route(coordinates){
