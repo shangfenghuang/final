@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mapbox Directions with Navigation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
+	<script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+	<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+	<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+
+	<style>
+		#map {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+		}
+
+		#directions-control {
+			position: absolute;
+			top: 10px;
+			left: 50px;
+			z-index: 1;
+			background-color: #fff;
+			padding: 10px;
+			border-radius: 3px;
+			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+			font-size: 12px;
+			font-family: 'Open Sans', sans-serif;
+			display: none;
+		}
+
+		#start-navigation-btn {
+			background-color: #3887be;
+			color: #fff;
+			padding: 10px;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+
+		#start-navigation-btn:hover {
+			background-color: #3074a4;
+		}
+	</style>
+</head>
+<body>
+	<div id="map"></div>
+	<div id="directions-control">
+		<div id="directions"></div>
+		<button id="start-navigation-btn">开始导航</button>
+	</div>
+
+	<script>
+		mapboxgl.accessToken = 'pk.eyJ1IjoidGltbmciLCJhIjoiY2xmMHBtNThwMDBxejNxcGpoY2c2aWxtNyJ9.2Z3rbpaUVbhqeuhxlfyQ2g';
+
+		var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/mapbox/streets-v11',
+			center: [-122.420679, 37.772537],
+			zoom: 14
+		});
+
+		var directions = new MapboxDirections({
+			accessToken: mapboxgl.accessToken,
+			unit: 'metric',
+			interactive: true,
+			language: 'zh-CN'
+		});
+
+		map.addControl(directions, 'top-right');
+
+		var directionsControl = document.getElementById('directions-control');
+		var startNavigationBtn = document.getElementById('start-navigation-btn');
+
+		directions.on('route', function() {
+			directionsControl.style.display = 'block';
+		});
+
+		startNavigationBtn.addEventListener('click', function() {
+			directions.start();
+		});
+	</script>
+</body>
+</html>

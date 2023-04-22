@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="INTUITIVE">
+    <meta name="description" content="">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="static/css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="static/css/homepage.css" media="screen">
+    <script class="u-script" type="text/javascript" src="static/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="static/js/nicepage.js" defer=""></script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster:400|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  </head>
+
+  <body class="u-body u-xl-mode" data-lang="en">
+    <header class="u-clearfix u-header u-palette-5-light-2 u-header" id="sec-f0d0">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-custom-font u-font-ubuntu u-nav u-spacing-20 u-unstyled u-nav-1">
+              <li class="u-nav-item">
+                <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" 
+                href="{{url_for('home')}}" style="padding: 10px;">Home</a>
+              </li>
+              <li class="u-nav-item">
+                <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" 
+                href="{{url_for('contactus')}}" style="padding: 10px;">Contact Us</a>
+              </li>
+              <li class="u-nav-item">
+                <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                href="{{url_for('login')}}" style="padding: 10px;">Login</a>
+              </li>
+            </ul>
+          </div>        
+        </nav>
+      </div>
+    </header>
+
+    <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="256" data-image-height="256" id="sec-17bb">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-align-center u-text u-text-default-lg u-text-default-md u-text-default-xl u-title u-text-1">Safe And Convenient Expedition</h1>
+        <p class="u-custom-font u-font-lobster u-large-text u-text u-text-default u-text-variant u-text-2">Accurate and Efficient<br>Help you spotting the nearest attractions all the time</p>
+      </div>
+    </section>
+
+    <section class="u-clearfix u-section-2" id="sec-12cb">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <img class="u-image u-image-round u-radius-41 u-image-1" data-image-width="1400" data-image-height="1050" src="static/images/navigation.jpg">
+                  <h5 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1"> Navigate users to their destination in real-time</h5>
+                  <img class="u-image u-image-contain u-image-default u-image-2" src="static/images/accidents1.jpg" alt="" data-image-width="600" data-image-height="446">
+                  <h5 class="u-custom-font u-font-montserrat u-text u-text-default u-text-2"> Avoid sending users through road sections with traffic incidents </h5>
+                </div>
+              </div>
+              <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <img class="u-image u-image-3" src="static/images/combined.JPG" data-image-width="385" data-image-height="148">
+                  <h5 class="u-custom-font u-font-montserrat u-text u-text-default u-text-3"> Three transportation routes for users to choose from: vehicle, bicycle, or walk</h5>
+                  <img class="u-image u-image-contain u-image-default u-image-4" src="static/images/crime.jpg" alt="" data-image-width="263" data-image-height="192">
+                  <h5 class="u-custom-font u-font-montserrat u-text u-text-default u-text-4"> Help users avoid walking through areas with high crime rates at night </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-8bd6"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Contributed by Cheuk Him Ng (30183823) and Shang Feng Huang (30163965)</p>
+      </div></footer>
+  
+</body>
+</html>
