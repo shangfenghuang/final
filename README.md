@@ -86,3 +86,7 @@
 Visualization of navigation results on the mapping Front-End after selecting starting and ending points, displaying customized routes specifically tailored for the "Driving" travel method. 
 <img src="./static/images/route.png" style="width: 100%; height: auto;">
 
+
+* **find current location**
+ The function uses the LRT and commuity json data to find the closest station and attraction.
+ <img src="./static/images/location.png" style="width: 100%; height: auto;">
