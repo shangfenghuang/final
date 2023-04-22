@@ -67,19 +67,19 @@
 * **login.html and register.html**
   <div style="display: flex; flex-direction: row;">
     <img src="./static/images/login.png"  style="width: 40%; height: auto;">
-    <img src="./static/images/register.png" style="width: 60%; height: auto;">
+    <img src="./static/images/register.png" style="width: 55%; height: auto;">
     </div>
 * **Current Traffic Incidents API used in frontend page**
   <div style="display: flex; flex-direction: row;">
-    <img src="./static/images/traffic.jpg"  style="width: 60%; height: auto;">
+    <img src="./static/images/traffic.jpg"  style="width: 55%; height: auto;">
     <img src="./static/images/traffic2.jpg.png" style="width: 40%; height: auto;">
 </div>
 
 * **Facilities Visualization and Crime map**
   The user can choose which layer is displayed.
 <div style="display: flex; flex-direction: row;">
-    <img src="./static/images/Fa.png"  style="width: 50%; height: auto;">
-    <img src="./static/images/crime.png" style="width: 50%; height: auto;">
+    <img src="./static/images/Fa.png"  style="width: 45%; height: auto;">
+    <img src="./static/images/crime.png" style="width: 45%; height: auto;">
 </div>
 
 * **Route function**
